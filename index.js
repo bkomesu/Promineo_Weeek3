@@ -16,4 +16,17 @@ console.log(ages)
 
 console.log(subtractFirstFromLast(ages));
 
+
+function findAverage(){
+    var total = 0
+    for (let i = 0; i < ages.length; i++){
+        total += ages[i];
+    }
+    return total / ages.length;
+}
+
+console.log(findAverage(ages));
+
 // Question 2 
+
+// var names = ['Sam', 'Tommmy', 'Tim', 'Sally', 'Buck', 'Bob']
