@@ -29,4 +29,4 @@ console.log(findAverage(ages));
 
 // Question 2 
 
-// var names = ['Sam', 'Tommmy', 'Tim', 'Sally', 'Buck', 'Bob']
+ var names = ['Sam', 'Tommmy', 'Tim', 'Sally', 'Buck', 'Bob']
