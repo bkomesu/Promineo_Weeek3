@@ -1,5 +1,6 @@
 // Question 1 
 
+/*
 var ages = [3, 9, 23, 64, 2, 8, 28, 93];
 console.log(ages);
 
@@ -27,6 +28,34 @@ function findAverage(){
 
 console.log(findAverage(ages));
 
-// Question 2 
+*/
+
+// Question 2 - a
 
  var names = ['Sam', 'Tommmy', 'Tim', 'Sally', 'Buck', 'Bob']
+
+ for (i = 0; i < [names.length-1]; i++){
+    var letters = 0;
+    letters = names.map(function(element){
+       return element.length;
+       
+    }); 
+    
+    var sumOfLetters = (letters.reduce(function (accumulator, currentValue){
+        return (accumulator + currentValue)
+    }));
+
+    var avg = sumOfLetters / names.length
+    
+}
+console.log(letters)
+console.log(sumOfLetters)
+console.log(avg)    
+
+// Question 2 - b
+var out = '';
+for(i = 0; i < names.length-1; i++){    
+    names[i];
+    out += names[i] + " ";     
+}
+console.log(out)
