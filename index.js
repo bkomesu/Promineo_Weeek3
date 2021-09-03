@@ -1,6 +1,6 @@
 // Question 1 
-
 /*
+
 var ages = [3, 9, 23, 64, 2, 8, 28, 93];
 console.log(ages);
 
@@ -184,7 +184,7 @@ console.log(willBuyDrink(true, 9))
 
 */
 
-// Question 13
+// Question 13 Wnated to make a basic rock paper scissors however, want to look into making it with switch statement since, type 1 and type 2 coulbe interchangable and there would too much else/if statements
 /*
 
 function pokemonTriangle(type1, type2){
