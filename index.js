@@ -168,4 +168,39 @@ function arrayAverageCompare(array1, array2){
 */
 
 // Question 12
+/*
 
+function willBuyDrink(isHotOutside, moneyInPocket){
+    if (isHotOutside == true && moneyInPocket > 10.5){
+        return true
+    } else {
+        console.log("either it is not hot outside or you do not have enough money in pocket")
+    }
+}
+
+console.log(willBuyDrink(true, 11))
+console.log(willBuyDrink(false, 11))
+console.log(willBuyDrink(true, 9))
+
+*/
+
+// Question 13
+/*
+
+function pokemonTriangle(type1, type2){
+    if (type1 == "fire" && type2 == "water"){
+        console.log("water wins!");
+    }else if (type1 == "plant" && type2 == "water"){
+        console.log("plant wins!");
+    }else if (type1 == "fire" && type2 == "plant"){
+        console.log("fire wins!");
+    }else if (type2 == type1){
+        console.log("Draw!")
+    }
+}
+
+console.log(pokemonTriangle("fire","water"))
+console.log(pokemonTriangle("plant","water"))
+console.log(pokemonTriangle("fire","plant"))
+
+*/
