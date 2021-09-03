@@ -64,20 +64,108 @@ console.log(out)
 
 */
 
-// Question 5
+// Question 5 & 6 
+/*
 
 var names = ['Sam', 'Tommmy', 'Tim', 'Sally', 'Buck', 'Bob']
 
 for (i = 0; i < [names.length-1]; i++){
-   var letters = 0;
-   letters = names.map(function(element){
-      return element.length;
-      
+   var nameLengths = 0;
+   nameLengths = names.map(function(element){
+       return element.length;
    }); 
    
-   var nameLengths = (letters.reduce(function (accumulator, currentValue){
+   var sumOfNameLengths = (nameLengths.reduce(function (accumulator, currentValue){
        return (accumulator + currentValue)
    }));
 }
    console.log(nameLengths);
+   console.log(sumOfNameLengths)
+
+*/
+
+// Question 7 
+/*
+function wordRepeater(word, n){
+    let repeatedString = ""
+    while (n > 0){
+        repeatedString += word;
+        n--
+    }
+    return repeatedString
+}
+
+console.log(wordRepeater("hi", 3));
+
+*/
+
+// Question 8 
+/*
+function displayFullname(first, last){
+    console.log(first + " " + last)
+}
+
+displayFullname("Bruce", "Komesu")
+*/
+
+// Question 9 
+/*
+var hundredPlus = [100,10, 90, 52]
+var hundredUnder = [10, 10, 3, 5, 4]
+
+function moreThanHundred (array) {
+    var sumOfArray = array.reduce(function(accumulator, currentValue){
+        return accumulator + currentValue
+    })
+    if (sumOfArray > 100){
+        console.log(true);
+    }
+}
+
+console.log(moreThanHundred(hundredPlus)); 
+
+*/
+
+// Question 10 & 11
+/*
+
+var BigAVG = [100 , 100, 100, 100]
+var SmallAVG = [2, 2, 2, 2,]
+var equalToBigAvg = [100 , 100, 100, 100]
+
+
+function arrayAverageCompare(array1, array2){
+    var array1Avg = 0
+    var array1Sum = (array1.reduce(function (accumulator, currentValue){
+        return (accumulator + currentValue)
+    }));
+    
+    array1Avg = (array1Sum / array1.length);
+
+    var array2Avg
+    var array2Sum = (array2.reduce(function (accumulator, currentValue){
+        return (accumulator + currentValue)
+    }));
+    
+    array2Avg = array2Sum / array2.length
+
+    if(array1Avg == array2Avg){
+        console.log("Array 1 and Array 2 have the same Average!");
+    } else if (array2Avg>array1Avg){
+        console.log("Array 2 Average is bigger!");
+    } else if(array1Avg > array2Avg) {
+        console.log(true);
+    }else{
+        console.log("you did not enter 2 arrays")
+    }
+
+}
+
+    console.log(arrayAverageCompare(BigAVG, equalToBigAvg))
+    console.log(arrayAverageCompare(SmallAVG, BigAVG ))
+    console.log(arrayAverageCompare(BigAVG, SmallAVG))
+
+*/
+
+// Question 12
 
